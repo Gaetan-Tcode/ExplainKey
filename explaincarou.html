@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExplainKey</title>
+    <link rel="icon" href="style/img/logoek.png" />
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet/less" href="style/style.less">
+    <link rel="stylesheet/less" href="style/explaincarou.less">
+    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/Tocca/Tocca.js" async></script>
+    <script type="text/javascript" src="js/script.js" async></script>
+</head>
+<body>
+<!-- Header -->
+<header>
+    <div id="logo">
+        <a href="index.html">
+            <img src="style/img/logoek.png" alt="logo">
+            <span>ExplainKey</span>
+        </a>
+    </div>
+    <menu>
+        <div id="list" class="menub">
+            <div class="lien">
+            <a class="lienm" href="index.html">ACCUEIL</a>
+            <a class="lienm" href="keyboard.html">CRÉE TON KEYBOARD</a>
+            <a class="lienm" href="custom.html">CUSTOM CABLE</a>
+            <a class="lienm" href="#">GALERIE</a>
+            <a class="lienm" href="#">CONTACT</a>
+            </div>
+            <div class="reseaux">
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.reddit.com/r/CustomKeyboards/" target="_blank"><i class="fab fa-reddit-square"></i></a>
+            </div>    
+        </div>
+        <div id="burger">
+            <span id="span1"></span>
+            <span id="span2"></span>
+            <span id="span3"></span>
+        </div>
+    </menu>
+</header>
+<!-- Fin Header -->
+
+<div id="slider">
+    <div class="container-fluid">
+        <div class="row tailleslider">
+            <div class="slider slider1">
+                <div>
+                    <div class="bloc1">
+                            <p>
+                                Grâce a ce guide que nous avons créé, vous allez pouvoir suivre étape par étape, la conception d'un clavier mécanique custom
+                            </p>
+                    </div>
+                    <div class="para">
+                        <p>Pour vous aider à avancer pas à pas, nous vous aiderons à sélectionner vos pièces et nous vous guiderons dans l'assemblage</p>
+                        <p>Commençons !</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider slider2">
+                <div>
+                    <p class="titre">Les composants essentiels</p>
+                    <p class="text">
+                        Avant de vous lancer dans l'aventure de la réalisation de votre clavier, il vous faudra connaître quelques notions. Nous vous proposons de vous balader sur les sites et forums suivants tels que le reddit <a href="https://www.reddit.com/r/MechanicalKeyboards/">/r/MechanicalKeyboards</a>, le forum  <a href="https://geekhack.org/">geekhack</a> ou bien même <a href="https://deskthority.net/">deskthority.net</a>. Il est nécessaire que vous sachiez les différents composants dont vous aurez besoin afin de réaliser votre clavier. Il peut être intéressant de regarder différents retours d'expérience.</p>
+                        <p class="text">Il se peut que vous trouviez des termes anglais mixé à du français, car la plupart de la communauté est anglophone. De plus, il faut prendre en compte le fait que c'est un hobby onéreux, il est tout à fait normal que vous trouviez des claviers moins chers dans le commerce, mais votre clavier custom vous apportera bien plus de satisfaction car il remplira pleinement vos exigences</p>
+                </div>
+            </div>
+            <div class="slider slider3">
+                <div>
+                    <p class="titre">PCB</p>
+                    <p class="text">
+                        Le PCB (Printed Circuit Board) est un circuit imprimé que nous allons utiliser pour créer et programmer notre clavier. Il s'agit de l'élément central sur lequel nous allons souder ou clipser nos différentes switches plus tard. Il existe toute une multitude de PCB de formats et d'options possibles : des leds, une batterie (pour les modèles Bluetooth)... La majorité sont programmables à l’aide du <a href="https://docs.qmk.fm/#/">QMK Firmware.</a>
+                            <ul class="text">
+                                <li><strong>Full-sized</strong> : Clavier complet comprenant 104 touches (Pavé numérique, touches fonction)</li>
+                                <li><strong>TKL </strong>(Tenkeyless) : Clavier sans pavé numérique</li>
+                                <li><strong>60%</strong> : Clavier ne comprenant que 60% des touches (Pas de pavé numérique, pas de touches fonction, …)</li>
+                                <li><strong>40%</strong>: Clavier minimal</li>
+                            </ul>
+                        </p>
+                        <p class="text">Il y a également d’autres tailles telles que : 75%, 80%, 87%, etc… Vous pourrez également trouver des PCB pour des claviers type Ergo (clavier séparé pour chacune des mains) ou bien même pour un pavé numérique simple.</p>
+                </div>
+            </div>
+            <div class="slider slider4">
+                <div>
+                    <p class="titre">Switches</p>
+                    <p class="text">Pour envoyer une information à votre clavier suite à l’activation de telle ou telle touche nous avons besoin de switch, le switch est un interrupteur qui va être actionné par une pression. Il est composé d'un ressort plus ou moins résistant qui va changer le ressenti de la frappe. Il existe plusieurs marques de switches (Cherry MX, Gateron, Kailh, …) qui proposent des gammes representées par différentes couleurs de switches, pour des ressentis de frappe bien différents (soft, clicky, …).</p>
+                    <p class="text">Il peut paraître difficile à première vue de trouver le switch qui correspond à votre utilisation. Vous pouvez aussi essayer en magasin la frappe des claviers, vendus par de grandes marques qui utilisent des standards en terme de switch. Aussi, vous avez la possibilité d'acheter des testeurs de switch qui permettent d'en essayer plusieurs types mais cela reste onéreux.</p>
+                </div>
+            </div>
+            <div class="slider slider5">
+                <div>
+                    <p class="titre">Stabilizers</p>
+                    <p class="text">
+                        Les stabilisateurs sont aussi importants que le reste ils permettent de gérer le cas des longues touches comme la barre espace ou même la touche entrée. Ils seront fixés au PCB et auront le rôle de support pour éviter que les longues touches ne basculent ou ne vrillent. Vous trouverez sur internet une multitude d'aide pour l'installation de vos stabilisateurs sur leur PCB.
+                        </p>
+                </div>
+            </div>
+            <div class="slider slider6">
+                <div>
+                    <p class="titre">Plate</p>
+                    <p class="text">On utilisera plus généralement des switches dits "plate-mounted" à 3 pins qui seront fixés sur une plaque avant d'être fixé au PCB. La plaque sera le plus souvent en aluminium ou en acier et sera déjà découpée pour pouvoir y recevoir les switches de votre layout. Le fait d'utiliser une plate rendra votre clavier bien plus solide et le protègera de la poussière.
+                    </p>
+                </div>
+            </div>
+            <div class="slider slider7">
+                <div>
+                    <p class="titre">Case</p>
+                    <p class="text">
+                        Cette étape dépendra vraiment de vos goûts. Vous allez pouvoir choisir la case selon votre layout, attention cela est très important. Cela déterminera vraiment le design de votre clavier. Il en existe de différentes finitions et matériaux tels que l'aluminium, le plastique, l'acrylique ou le bois.
+                        </p>
+                </div>
+            </div>
+            <div class="slider slider8">
+                <div>
+                    <p class="titre">Keycaps</p>
+                    <p class="text">Il existe différents profils de touches et il faudra choisir selon vos préférences, celui-ci changera la forme, la hauteur ou bien meme la profondeur de vos touches. Vous pouvez voir <i>ci-dessous<img src="style/img/1_jgB4n20AcLiVngKdB3sf8g.jpeg" alt=""></i>, différents profils les plus fréquents.
+                        
+                        <p class="text">Il est important de déterminer à l'avance quel type de layout vous désirez.<br>S’agit-t’il d’un azerty, d’un qwerty, bépo ou autre? ANSI? ISO? Si vous comptez partir sur du ISO AZERTY cela limitera énormément vos choix car la communauté étant essentiellement anglophone les fabricants se font rares pour celui-ci. Eventuellement vous pouvez opter pour un set de touches brutes sans inscription pour éviter les problèmes de layout mais pour cela il faudra les connaitre par coeur.</p>
+                </div>
+            </div>
+            <div class="slider slider9">
+                <div>
+                    <p class="titre">Programmer son clavier avec QMK<p>
+                    <p class="text">Certains PCB sont a programmer on utilise pour cela QMK firmware. Les PCB viennent avec un firmware de base que vous pouvez flasher selon vos besoin pour modifier le layout par exemple ou même modifier les leds. D'autres outils comme kdfirmaware ou qmkconfig permettent de modifier aisément votre layout et de compiler le firmware. Il faut tout de même lire la documentation de votre PCB pour connaitre la combinaison de touches pour lancer le bootloader.</p>
+                </div>
+            </div>
+            <div class="slider slider10">
+                <div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="button">
+        <i class="flecheleft">
+            <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+            </svg>
+        </i>
+        <i class="flecheright">
+            <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+        </i>
+    </div>
+</div>
+<!-- Footer -->
+<footer>
+    <div class="container">
+            <a href="index.html">ACCUEIL</a>
+            <a href="#">MENTIONS LÉGALES</a>
+            <div>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.reddit.com/r/CustomKeyboards/" target="_blank"><i class="fab fa-reddit-square"></i></a>
+            </div>
+    </div>
+</footer>
+<!-- Fin Footer -->
+</body>
+</html>
