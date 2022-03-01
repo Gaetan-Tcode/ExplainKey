@@ -2,7 +2,7 @@ body{
     background-color: #333;
 }
 section{
-    height:calc(100vh - 27px);
+    height:100vh;
     position: relative;
 }
 #onglet{
@@ -25,6 +25,7 @@ section{
 #block{
     position: relative;
     height: calc(100vh - 170px);
+    overflow: hidden;
     .page1,.page2{
         position: absolute;
         height: calc(100vh - 130px);
@@ -150,7 +151,7 @@ section{
     border-radius: 10px;
     box-shadow:25px 25px 75px #00000025,10px 10px 70px #00000025, inset -5px -5px 15px #00000050, inset 5px 5px 15px #00000050;
     border-radius: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     div{
         
         position: relative;
@@ -343,7 +344,6 @@ footer{
     }
     #boitierd{
     position: relative;
-    top: 110px;
     align-items: flex-end;
     text-align:center;
     .Choixcouleur{
@@ -361,6 +361,20 @@ footer{
 }
 
 @media screen and (max-width: 993px){
+    #boitierg{
+        .cable{
+            align-items: flex-start;
+            position: relative;
+            border-radius: 5px;
+            height: 570px;
+            width: 601px;
+            img{
+                position: absolute;
+                height: 570px;
+                width: auto;
+            }
+        }
+    }
     .parent {
         height:calc(300px / 1.5 ) ;
         width: calc(900px / 1.5);
@@ -382,7 +396,6 @@ footer{
     }
     #boitierd,#boitierg{
             align-items: center;
-            transform: scale( 0.8);
         }
 }
 @media screen and (max-width: 600px){
@@ -409,7 +422,47 @@ footer{
             }
         }
     }
-    #boitierd,#boitierg{
-        transform: scale( 0.6);
+
+    header{
+        #logo{
+            a{
+              img{  
+                height:40px;
+                width: auto;
+              }
+              span{
+                padding-left: 30px;
+                font-size: 1.5em;
+                color:#fff;
+              }
+            }
+          }
     }
+    #logo{
+    position:fixed;
+    left: 20px;
+    top: 20px;
+    a{
+      display:flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content:center;
+      img{
+        
+        height:60px;
+        width: auto;
+      }
+      span{
+        padding-left: 30px;
+        font-size: 2em;
+        color:#fff;
+      }
+    }
+  }
+  #onglet{
+      margin-top: 70px;
+      span{
+          height: 30px;
+      }
+  }
 }

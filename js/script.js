@@ -175,7 +175,7 @@ choixzone(".zoneF",".touche");
 var slide = 0;
 
 $(".flecheright").click(function (){
-    if(slide <= 900){
+    if(slide <= 800){
         
         slide += 101;  
     
@@ -214,7 +214,7 @@ $('.slider').bind('mousewheel', function(e){
         
     }
     else{
-        if(slide <= 900){
+        if(slide <= 800){
     
             slide += 101;  
         
@@ -227,7 +227,7 @@ $('.slider').bind('mousewheel', function(e){
 });
 
 $('.slider').on('swipeleft',function (){
-    if(slide <= 900){
+    if(slide <= 800){
         
         slide += 101;  
     
