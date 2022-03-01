@@ -1,0 +1,415 @@
+body{
+    background-color: #333;
+}
+section{
+    height:calc(100vh - 27px);
+    position: relative;
+}
+#onglet{
+    margin-top: 90px;
+    text-align: center;
+    span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        background-color: #333;
+        color: white;
+        border-top: white 1px solid;
+    }
+    .onglet1{
+       background-color: white;
+        color: black;
+    }
+}
+#block{
+    position: relative;
+    height: calc(100vh - 170px);
+    .page1,.page2{
+        position: absolute;
+        height: calc(100vh - 130px);
+        background-color: rgb(65, 65, 65);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .page1{
+        z-index: 2;
+    }
+    .page2{
+        background: linear-gradient(144deg, #b6b6b6 0%, #ffffff 97%);
+        z-index: 1;
+    }
+}
+
+//------------------------------------------------------------
+//Keyboard
+//------------------------------------------------------------
+
+//Choix couleur touche
+#couleurclavier{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    .option{
+        width: 600px;
+        justify-content:space-around;
+    }
+    .couleurs,.option,.mode,.zonning{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+    }
+    .mode{
+       img{
+            margin: auto;
+            height: 40px;
+            width: 40px;
+            border: 1px solid #333;
+            border-radius: 3px;
+        } 
+    }
+    .titre{
+        display: flex;
+        flex-direction: column;
+        p{
+            color: white;
+            margin-bottom: 5px;
+        }
+    }
+    span{
+        overflow: hidden;
+        background-color: #fff;
+        border: 1px solid white;
+        border-radius: 5px;
+        margin: 0 2px;
+        font-size: 2em;
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i{
+            text-align: center;
+            color: #000;
+        }
+        
+        
+    }
+    .zonning{
+            .zone{
+            width: 120px;
+            position: relative;
+                img{
+                    position: absolute;
+                    height: 50px;
+                    width: 120px;
+                }
+                p{
+                    position: absolute;
+                    font-size: 20px;
+                    color: black;
+                }
+            }
+
+    }
+    
+// couleurs
+    .color{
+        margin: 1.5px 3px;
+        height: 24px;
+        width: 24px;
+        border: 1px solid white;
+        cursor: pointer;
+    }
+    .choixC{
+        font-size: 1.1em;
+    }
+    .choixT, .color-charcoal{
+        border: 2px orangered solid;
+    }
+    
+}
+
+.parent {
+    margin: auto;
+    display: grid;
+    height: 300px;
+    width: 900px;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 6px;
+    grid-row-gap: 6px;
+    padding: 15px;
+    background-color: #1b1b1b;
+    border-radius: 10px;
+    box-shadow:25px 25px 75px #00000025,10px 10px 70px #00000025, inset -5px -5px 15px #00000050, inset 5px 5px 15px #00000050;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    div{
+        
+        position: relative;
+        color: #fff;
+        font-weight: 400;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1em;
+        overflow: hidden;
+        font-size: 14px;
+        border: 1px #1d1d1d solid;
+        background: #373534;
+        border-radius: 3px;
+        box-shadow: inset 0 -5px 0 5px #00000026, inset 0 -5px 5px #00000040, 0 0 0 2px #000000bf,10px 20px 25px #00000066;
+        cursor:pointer;
+        i{
+            position: relative;
+            top: -5px;
+        }
+        
+    }
+    
+    .div1 { grid-area: 1 / 1 / 3 / 3; }
+    .div2 { grid-area: 1 / 3 / 3 / 5; }
+    .div3 { grid-area: 1 / 5 / 3 / 7; }
+    .div4 { grid-area: 1 / 7 / 3 / 9; }
+    .div5 { grid-area: 1 / 9 / 3 / 11; }
+    .div6 { grid-area: 1 / 11 / 3 / 13; }
+    .div7 { grid-area: 1 / 13 / 3 / 15; }
+    .div8 { grid-area: 1 / 15 / 3 / 17; }
+    .div9 { grid-area: 1 / 17 / 3 / 19; }
+    .div10 { grid-area: 1 / 19 / 3 / 21; }
+    .div11 { grid-area: 1 / 21 / 3 / 23; }
+    .div12 { grid-area: 1 / 23 / 3 / 25; }
+    .div13 { grid-area: 1 / 25 / 3 / 27; }
+    .div14 { grid-area: 1 / 27 / 3 / 31; }
+    .div15 { grid-area: 3 / 1 / 5 / 4; }
+    .div16 { grid-area: 3 / 4 / 5 / 6; }
+    .div17 { grid-area: 3 / 6 / 5 / 8; }
+    .div18 { grid-area: 3 / 8 / 5 / 10; }
+    .div19 { grid-area: 3 / 10 / 5 / 12; }
+    .div20 { grid-area: 3 / 12 / 5 / 14; }
+    .div21 { grid-area: 3 / 14 / 5 / 16; }
+    .div22 { grid-area: 3 / 16 / 5 / 18; }
+    .div23 { grid-area: 3 / 18 / 5 / 20; }
+    .div24 { grid-area: 3 / 20 / 5 / 22; }
+    .div25 { grid-area: 3 / 22 / 5 / 24; }
+    .div26 { grid-area: 3 / 24 / 5 / 26; }
+    .div27 { grid-area: 3 / 26 / 5 / 28; }
+    .div28 { grid-area: 3 / 28 / 5 / 31; }
+    .div29 { grid-area: 5 / 1 / 7 / 5; }
+    .div30 { grid-area: 5 / 5 / 7 / 7; }
+    .div31 { grid-area: 5 / 7 / 7 / 9; }
+    .div32 { grid-area: 5 / 9 / 7 / 11; }
+    .div33 { grid-area: 5 / 11 / 7 / 13; }
+    .div34 { grid-area: 5 / 13 / 7 / 15; }
+    .div35 { grid-area: 5 / 15 / 7 / 17; }
+    .div36 { grid-area: 5 / 17 / 7 / 19; }
+    .div37 { grid-area: 5 / 19 / 7 / 21; }
+    .div38 { grid-area: 5 / 21 / 7 / 23; }
+    .div39 { grid-area: 5 / 23 / 7 / 25; }
+    .div40 { grid-area: 5 / 25 / 7 / 27; }
+    .div41 { grid-area: 5 / 27 / 7 / 31; }
+    .div42 { grid-area: 7 / 1 / 9 / 6; }
+    .div43 { grid-area: 7 / 6 / 9 / 8; }
+    .div44 { grid-area: 7 / 8 / 9 / 10; }
+    .div45 { grid-area: 7 / 10 / 9 / 12; }
+    .div46 { grid-area: 7 / 12 / 9 / 14; }
+    .div47 { grid-area: 7 / 14 / 9 / 16; }
+    .div48 { grid-area: 7 / 16 / 9 / 18; }
+    .div49 { grid-area: 7 / 18 / 9 / 20; }
+    .div50 { grid-area: 7 / 20 / 9 / 22; }
+    .div51 { grid-area: 7 / 22 / 9 / 24; }
+    .div52 { grid-area: 7 / 24 / 9 / 26; }
+    .div53 { grid-area: 7 / 26 / 9 / 31; }
+    .div54 { grid-area: 9 / 1 / 11 / 4; }
+    .div55 { grid-area: 9 / 4 / 11 / 7; }
+    .div56 { grid-area: 9 / 7 / 11 / 10; }
+    .div57 { grid-area: 9 / 10 / 11 / 22; }
+    .div59 { grid-area: 9 / 25 / 11 / 28; }
+    .div58 { grid-area: 9 / 22 / 11 / 25; }
+    .div60 { grid-area: 9 / 28 / 11 / 31; }
+}
+
+//------------------------------------------------------------
+// Fin keyboard
+//------------------------------------------------------------
+
+//------------------------------------------------------------
+// Cable
+//------------------------------------------------------------
+.boitier{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+#boitierd{
+    align-items: flex-end;
+    text-align:center;
+    .Choixcouleur{
+        background-color: #D8D8D8;
+        padding: 50px 30px;
+        border-radius: 5px;
+        h3{
+            Font-size:30px; 
+            margin: 0;
+            margin-top:4px;
+            color:#000000;
+        }
+        p{
+            font-size: 20px;
+            margin: 0;
+            color:#2e2e2e;
+        }
+        select {
+            appearance: none;
+            border: 0;
+            outline: 0;
+            font: inherit;
+            width: 20em;
+            height: 3em;
+            margin: 10px 0;
+            padding: 0 4em 0 1em;
+            background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg)
+                no-repeat right 0.8em center / 1.4em,
+              linear-gradient(to left, #0000004d 3em, #fffefe33 3em);
+            color: Black;
+            border-radius: 0.25em;
+            box-shadow: 0 0 1em 0 #46454533;
+            cursor: pointer;
+            option {
+              color: #fff;
+              background-color: #686868;
+            }
+          }
+        
+    }
+
+}
+#boitierg{
+    .cable{
+        align-items: flex-start;
+        position: relative;
+        border-radius: 5px;
+        height: 570px;
+        width: 601px;
+        img{
+            position: absolute;
+            height: 570px;
+            width: auto;
+        }
+        #cable1{
+            filter: none;
+        }
+        #cable2{
+            filter: none;
+        }
+        #cableraccord{
+            filter: saturate(1.9);
+        }
+    }
+}
+
+//------------------------------------------------------------
+// Fin Cable
+//------------------------------------------------------------
+footer{
+    position: absolute;
+    bottom: 1px;
+    z-index: 3;
+}
+
+
+@media screen and (max-width:1200px){
+    .page2{
+        overflow-y: scroll;
+    }
+    #boitierg{
+        .cable{
+            height: 500px;
+            width: 528px;
+            img{
+                height: 500px;
+            }
+        }
+    }
+    #boitierd{
+    position: relative;
+    top: 110px;
+    align-items: flex-end;
+    text-align:center;
+    .Choixcouleur{
+        background-color: #D8D8D8;
+        padding: 50px 30px;
+        border-radius: 5px;
+        h3{
+            Font-size:30px; 
+            margin: 0;
+            margin-top:4px;
+            color:#000000;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 993px){
+    .parent {
+        height:calc(300px / 1.5 ) ;
+        width: calc(900px / 1.5);
+        grid-column-gap:calc(6px/1.5) ;
+        grid-row-gap:calc(6px/1.5) ;
+        padding:calc(15px / 1.5) ;
+        border-radius:calc(10px/1.5);
+        border-radius:calc(10px/1.5);
+    
+        div{
+            font-size: 10px;
+            border-radius: 3px;
+            box-shadow: inset 0 -3px 0 3px #00000026, inset 0 -3px 3px #00000040, 0 0 0 2px #000000bf,10px 20px 25px #00000066;
+            i{
+                top: -3px;
+            }
+            
+        }
+    }
+    #boitierd,#boitierg{
+            align-items: center;
+            transform: scale( 0.8);
+        }
+}
+@media screen and (max-width: 600px){
+    #couleurclavier{
+        .option{
+            width: 100%;
+        }  
+    }
+      .parent {
+        height:calc(300px / 2.5 ) ;
+        width: calc(900px / 2.5);
+        grid-column-gap:calc(6px/2.5) ;
+        grid-row-gap:calc(6px/2.5) ;
+        padding:calc(15px / 2.5) ;
+        border-radius:calc(10px/2.5);
+        border-radius:calc(10px/2.5);
+    
+        div{
+            font-size: 7px;
+            border-radius: 3px;
+            box-shadow: inset 0 -1px 0 1px #00000026, inset 0 -1px 1px #00000040, 0 0 0 1px #000000bf,10px 20px 25px #00000066;
+            i{
+                top: -1px;
+            }
+        }
+    }
+    #boitierd,#boitierg{
+        transform: scale( 0.6);
+    }
+}
