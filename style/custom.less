@@ -331,7 +331,7 @@ footer{
 
 @media screen and (max-width:1200px){
     .page2{
-        overflow-y: scroll;
+        overflow: scroll;
     }
     #boitierg{
         .cable{
@@ -361,6 +361,10 @@ footer{
 }
 
 @media screen and (max-width: 993px){
+    .page2{
+        overflow: scroll;
+        padding-top: 300px;
+    }
     #boitierg{
         .cable{
             align-items: flex-start;
@@ -399,6 +403,24 @@ footer{
         }
 }
 @media screen and (max-width: 600px){
+    .page2{
+        overflow: scroll;
+        padding-top: 100px;
+    }
+    #boitierg{
+        .cable{
+            align-items: flex-start;
+            position: relative;
+            border-radius: 5px;
+            height: calc(570px/1.6);
+            width: calc(601px/1.6);
+            img{
+                position: absolute;
+                height: calc(570px/1.6);
+                width: auto;
+            }
+        }
+    }
     #couleurclavier{
         .option{
             width: 100%;
