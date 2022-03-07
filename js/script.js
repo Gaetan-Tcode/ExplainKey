@@ -250,9 +250,10 @@ $('.slider').on('swiperight',function (){
     }
 });
 
-
-        /* GALERIE */
-
+//------------------------------------------------------------------------------------
+// Galerie
+//------------------------------------------------------------------------------------
+// range les photos qui provienne d'un json et les range dans le desordre dans un tableau pour les afficher dans la galerie
  $.ajax({
     type: "GET",
     async: false,
@@ -272,6 +273,9 @@ $('.slider').on('swiperight',function (){
     } 
 });
 
+//------------------------------------------------------------------------------------
+// CONTACT
+//------------------------------------------------------------------------------------
 //Fonction de vérification du formulaire
 $("#send").click(function(){
 
@@ -318,20 +322,36 @@ $("#send").click(function(){
     return valid;
 })
 
-/* contact */
-
 //Fonction de géolocalisation
-if(navigator.geolocation){
+var lat;
+var long;
+
+ if(navigator.geolocation){
     navigator.geolocation.getCurrentPosition(function(position){
 
     //Si le client autorise la géolocalisation initie la google maps avec son marqueur
-        var lat = position.coords.latitude;
-        var long = position.coords.longitude;
-        
+        lat = position.coords.latitude;
+        long = position.coords.longitude;
+
+        var settings = {
+            "url": `https://api-adresse.data.gouv.fr/reverse/?lon=${long}&lat=${lat}`,
+            "method": "GET",
+            "timeout": 0,
+          };
+          
+          $.ajax(settings).done(function (response) {
+              $("#ville").val(response.features[0].properties.city)
+            console.log(response.features[0].properties.city);
+          });
     })
-} else {
-    "localistation non autoriser";
 }
+
+    
+        
+    
+
+    
+
 
 
 });
