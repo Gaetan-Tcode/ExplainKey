@@ -1,12 +1,16 @@
+body{
+    overflow: hidden;
+}
 #contact{
     height: 100vh;
     width: 100vw;
     background:url("img/clavier10.png");
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     color: rgb(0, 0, 0);
-
     form{
         margin: auto;
         backdrop-filter: blur(16px) saturate(180%);
@@ -55,6 +59,16 @@
         background-color: rgba(243, 0, 0, 0.219);
         border: 1px red solid;
     }
+    footer{
+        position: absolute;
+        bottom: 2px;
+    }
+}
+@media screen and (max-width: 993px){
+    footer{
+        position: absolute;
+        bottom: 0px;
+    }
 }
 @media screen and (max-width: 600px){
     #contact{
@@ -62,5 +76,9 @@
             width: 100%;
             height: 75vh;
         }
+    }
+    footer{
+        position: absolute;
+        bottom: 0px;
     }
 }
