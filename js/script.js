@@ -272,5 +272,66 @@ $('.slider').on('swiperight',function (){
     } 
 });
 
+//Fonction de vérification du formulaire
+$("#send").click(function(){
+
+    var valid;
+
+    //Vérification du nom
+    if($("#name").val() == "") {
+        $("#name").addClass("error")
+        $("#name").next($('.erreur-')).text("Veuillez entrer un nom valide.");
+        valid = false;
+    } else if (!$("#name").val().match(/^[a-z]+$/i)){
+        $("#name").addClass("error")
+        $("#name").next($('.erreur-')).text("Veuillez entrer un nom valide.");
+        valid = false;
+    } else {
+        $("#name").removeClass("error")
+        $("#name").next($('.erreur-')).text("");
+    }
+
+    //Vérification de l'adresse mail
+    if($("#email").val() == "") {
+        $("#email").addClass("error")
+        $("#email").next($('.erreur-')).text("Veuillez entrer un email valide.");
+        valid = false;
+    } else if (!$("#email").val().match(/^[a-z0-9]+([\.-_]?[a-z0-9]+)*@[a-z0-9]+([\.-_]?[a-z0-9]+)*(\.[a-z]{2,6})+$/)){
+        $("#email").addClass("error")
+        $("#email").next($('.erreur-')).text("Veuillez entrer un email valide.");
+        valid = false;
+    } else {
+        $("#email").removeClass("error")
+        $("#email").next($('.erreur-')).text("");
+    }
+
+    //Vérification du message
+    if($("#message").val() == "") {
+        $("#message").addClass("error")
+        $("#message").next($('.erreur-')).text("Veuillez entrer un message valide.");
+        valid = false;
+    } else {
+        $("#message").removeClass("error")
+        $("#message").next($('.erreur-')).text("");
+    }
+    
+    return valid;
+})
+
+/* contact */
+
+//Fonction de géolocalisation
+if(navigator.geolocation){
+    navigator.geolocation.getCurrentPosition(function(position){
+
+    //Si le client autorise la géolocalisation initie la google maps avec son marqueur
+        var lat = position.coords.latitude;
+        var long = position.coords.longitude;
+        
+    })
+} else {
+    "localistation non autoriser";
+}
+
 
 });

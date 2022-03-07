@@ -1,0 +1,66 @@
+#contact{
+    height: 100vh;
+    width: 100vw;
+    background:url("img/clavier10.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+
+    form{
+        margin: auto;
+        backdrop-filter: blur(16px) saturate(180%);
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        background-color: rgba(255, 255, 255, 0.75);
+        border-radius: 12px;
+        border: 1px solid rgba(209, 213, 219, 0.3);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 60%;
+        height: 60vh;
+        text-align: center;
+        div{
+          display: flex;
+          flex-direction: column;
+          width: 80%;  
+        }
+        input{
+            border: 0;
+            border-bottom: 1px solid ;
+            background-color: inherit;
+            &:focus{
+                
+            }
+        }
+        input[type=submit]{
+            border-radius: 5px;
+            border: 0;
+            background-color: #7EBDE8;
+            transition: 0.2s linear;
+            &:hover{
+                background-color: #42a492;
+                transition: 0.2s linear;
+            }
+        }
+        textarea{
+            border: 0;
+            border-bottom: 1px solid ;
+            background-color: inherit;
+            resize : none;
+        }
+    }
+    .error{
+        background-color: rgba(243, 0, 0, 0.219);
+        border: 1px red solid;
+    }
+}
+@media screen and (max-width: 600px){
+    #contact{
+        form{
+            width: 100%;
+            height: 75vh;
+        }
+    }
+}
