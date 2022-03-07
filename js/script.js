@@ -249,4 +249,28 @@ $('.slider').on('swiperight',function (){
 
     }
 });
+
+
+        /* GALERIE */
+
+ $.ajax({
+    type: "GET",
+    async: false,
+    url: "js/galerie.json",
+    dataType: "json",
+    success: function (data) {
+        $.each(data, function (i, li){
+           $(`.imggalerie${i}`).append(
+            `<img src="style/img/galerie/${li}" alt="">` 
+        )  
+        });
+
+        
+    },
+    error: function(){
+        "error"
+    } 
+});
+
+
 });
