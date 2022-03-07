@@ -1,5 +1,6 @@
 body{
     background-color: #333;
+    overflow: hidden;
 }
 section{
     height:100vh;
@@ -24,7 +25,7 @@ section{
 }
 #block{
     position: relative;
-    height: calc(100vh - 170px);
+    height: calc(100vh - 70px);
     overflow: hidden;
     .page1,.page2{
         position: absolute;
@@ -33,6 +34,7 @@ section{
         display: flex;
         align-items: center;
         justify-content: center;
+        overflow-x: hidden;
     }
     .page1{
         z-index: 2;
@@ -486,4 +488,11 @@ footer{
           height: 30px;
       }
   }
+    footer{
+            position: fixed;
+            bottom: 0px;
+        }
+    
+
+
 }
