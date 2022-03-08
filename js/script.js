@@ -253,16 +253,18 @@ $('.slider').on('swiperight',function (){
 //------------------------------------------------------------------------------------
 // Galerie
 //------------------------------------------------------------------------------------
-// range les photos qui provienne d'un json et les range dans le desordre dans un tableau pour les afficher dans la galerie
+
  $.ajax({
     type: "GET",
     async: false,
     url: "js/galerie.json",
     dataType: "json",
     success: function (data) {
+        console.log(data);
         $.each(data, function (i, li){
            $(`.imggalerie${i}`).append(
-            `<img src="style/img/galerie/${li}" alt="">` 
+            `<img src="style/img/galerie/${li[0]}" alt="${li[1]}">`
+            
         )  
         });
 
@@ -345,13 +347,5 @@ var long;
           });
     })
 }
-
-    
-        
-    
-
-    
-
-
 
 });
