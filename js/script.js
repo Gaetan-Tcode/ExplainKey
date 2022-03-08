@@ -1,6 +1,8 @@
 $(function(){
 
-    // HEADER 
+//------------------------------------------------------------------------------------
+// HEADER
+//------------------------------------------------------------------------------------
     //fonction qui changer au click du menu burger les classes des elements id
        
     $("#burger").click(function (){
@@ -254,6 +256,7 @@ $('.slider').on('swiperight',function (){
 // Galerie
 //------------------------------------------------------------------------------------
 
+// appel du fichier json 
  $.ajax({
     type: "GET",
     async: false,
