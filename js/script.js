@@ -325,8 +325,11 @@ $("#send").click(function(){
 })
 
 //Fonction de géolocalisation
-var lat;
-var long;
+
+$('#location').click(function(){ 
+    console.log('coucou');
+    var lat;
+    var long;
 
  if(navigator.geolocation){
     navigator.geolocation.getCurrentPosition(function(position){
@@ -343,9 +346,10 @@ var long;
           
           $.ajax(settings).done(function (response) {
               $("#ville").val(response.features[0].properties.city)
-            console.log(response.features[0].properties.city);
+                console.log(response);
           });
     })
 }
+});
 
 });
