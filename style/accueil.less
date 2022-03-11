@@ -94,6 +94,7 @@ section{
         text-align:center;
     }
                 /* Scroll */
+    
     svg{
         position: absolute;
         bottom: 10px;
@@ -343,6 +344,9 @@ section{
     
 }
 @media screen and (max-width: 600px){
+    .snap{
+        overflow-y: initial;
+    }
     #home h1 {
         font-size: 3em;
     }
@@ -352,5 +356,10 @@ section{
     #sect2 .boitier .carrer{
         width: 100vw;
         left: 0;
+    }
+}
+@media(pointer:coarse){
+    #home svg{
+        display: none;
     }
 }
