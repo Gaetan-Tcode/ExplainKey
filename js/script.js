@@ -266,6 +266,7 @@ $('.slider').on('swiperight',function (){
         console.log(data);
         $.each(data, function (i, li){
            $(`.imggalerie${i}`).append(
+
             `<img src="style/img/galerie/${li[0]}" alt="${li[1]}">`
             
         )  
